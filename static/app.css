@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(166, 233, 210);
+}
+
+button {
+    padding: .8rem;
+    border-radius: .5rem
+}
+
+form button {
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: .5rem;
+    margin-top: 1rem;
+}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Question {{ num + 1 }} {% endblock %}
+{% block instructions %} Question {{ num + 1 }} {% endblock %}
+{% block content %} 
+<p>{{ question.question }}</p>
+<form action="/answers/{{ num }}" method="POST">
+{% for option in question.choices%}
+    <input type="checkbox" id="question_{{ num }}_{{ option }}" name="{{ num }}" value="{{ option }}" > <label for="question_{{ num }}_{{ option }}">{{ option }}</label>
+{% endfor %}
+<button>Submit</button>
+</form>
+{% endblock %}

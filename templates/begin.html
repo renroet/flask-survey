@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block title %} Begin Satisfaction Survey {% endblock %}
+{% block survey_title %} {{ title }} {% endblock %}
+{% block instructions %} {{ instruct }} {% endblock %}
+{% block content %} 
+<form action="/questions/0">
+    <button>START</button>
+</form> {% endblock %}
