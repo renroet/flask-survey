@@ -3,6 +3,6 @@
 {% block survey_title %} {{ title }} {% endblock %}
 {% block instructions %} {{ instruct }} {% endblock %}
 {% block content %} 
-<form action="/questions/0">
+<form action="/session_responses" method="POST" >
     <button>START</button>
 </form> {% endblock %}
